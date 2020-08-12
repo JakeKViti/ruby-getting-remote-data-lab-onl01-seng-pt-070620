@@ -1,6 +1,8 @@
 # Write your code here
 require 'open-uri'
 require 'net/http'
+require 'json'
+
 
 class GetRequester
   attr_accessor :url
@@ -17,7 +19,7 @@ class GetRequester
   end
 
   def parse_json
-
+    thingy = get_response_body()
   end
 
 end
